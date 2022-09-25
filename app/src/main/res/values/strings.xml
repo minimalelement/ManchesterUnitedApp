@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ManUtdApp</string>
+    <string-array name="teams">
+        <item>Manchester City</item>
+        <item>Arsenal</item>
+        <item>Chelsea</item>
+        <item>Tottenham</item>
+        <item>Aston Villa</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Items List</string>
+    
+    <string-array name="languages">
+
+        <item>Jersey</item>
+        <item>Adidas Kit</item>
+        <item>Man Utd Home</item>
+        <item>Away Kit</item>
+        <item>Away Kit2</item>
+        <item>Boots</item>
+        <item>Boots2</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Order Shipped</item>
+        <item>Delivered</item>
+        <item>Order Shipped</item>
+        <item>Delivered</item>
+        <item>Delivered</item>
+        <item>Delivered Late</item>
+        <item>Delivered</item>
+
+    </string-array>
+
+</resources>

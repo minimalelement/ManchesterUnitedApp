@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".ItemsFragment">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/bebasneue"
+                android:text="Shop"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pop_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="Region"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:onClick="showPopup"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/bebasneue"
+                android:text="Home Kit"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt1"
+                            android:layout_width="200dp"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="-20dp"
+                            android:src="@drawable/home2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:gravity="right"
+                            android:text="Home 1 Red"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt1"
+                            android:layout_alignRight="@+id/pt1"
+                            android:layout_marginTop="-9dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 15.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/border">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt2"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="Painting 2"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt2"-->
+<!--                            android:layout_alignRight="@+id/pt2"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="$ 5.0"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt3"
+                            android:layout_width="200dp"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="-20dp"
+                            android:src="@drawable/home3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:gravity="right"
+                            android:text="Home 2 Red"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt3"
+                            android:layout_alignRight="@+id/pt3"
+                            android:layout_marginTop="-9dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 25.0"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt4"
+                            android:layout_width="200dp"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="-20dp"
+                            android:src="@drawable/home4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt4"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:gravity="right"
+                            android:text="Home 3 Red"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt4"
+                            android:layout_alignRight="@+id/pt4"
+                            android:layout_marginTop="-9dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 25.0"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </GridLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/frag1"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/border"
+                android:text="Show More"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bebasneue"
+                android:text="Away Kit"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_snst1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageButton
+                            android:id="@+id/snst1_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/away1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst1_btn"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Away 1 Blue"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst1_btn"
+                            android:layout_alignRight="@+id/snst1_btn"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 25.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/snst2"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/away2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst2"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Away 2 Blue"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst2"
+                            android:layout_alignRight="@+id/snst2"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 15.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/snst3"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/away5" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst3"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Away 3 White"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst3"
+                            android:layout_alignRight="@+id/snst3"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 25.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/snst4"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/away6" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst4"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Away 4 White"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snst4"
+                            android:layout_alignRight="@+id/snst4"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 12"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </GridLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bebasneue"
+                android:text="Boots"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt9"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/boots1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt9"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Addidas 1"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt9"
+                            android:layout_alignRight="@+id/pt9"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 9.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt10"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/boots2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt10"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Addidas 2"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt10"
+                            android:layout_alignRight="@+id/pt10"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 10.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt11"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/boots4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt11"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Addidas 3"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt11"
+                            android:layout_alignRight="@+id/pt11"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 11.3"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/pt12"
+                            android:layout_width="200dp"
+                            android:layout_height="210dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@drawable/boots2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt12"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="right"
+                            android:text="Addidas 4"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pt12"
+                            android:layout_alignRight="@+id/pt12"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:text="$ 5.6"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </GridLayout>
+            </HorizontalScrollView>
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:text="Canvas Paintings"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <GridLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_marginTop="5dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/border">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/pt13"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="210dp"-->
+<!--                            android:layout_marginTop="-25dp"-->
+<!--                            android:src="@drawable/pt13" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt13"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="Painting 13"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt13"-->
+<!--                            android:layout_alignRight="@+id/pt13"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="$ 11.3"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/border">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/pt14"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="210dp"-->
+<!--                            android:layout_marginTop="-25dp"-->
+<!--                            android:src="@drawable/pt14" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt14"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="Painting 14"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt14"-->
+<!--                            android:layout_alignRight="@+id/pt14"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="$ 14.3"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/border">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/pt15"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="210dp"-->
+<!--                            android:layout_marginTop="-25dp"-->
+<!--                            android:src="@drawable/pt15" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt15"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="Painting 15"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt15"-->
+<!--                            android:layout_alignRight="@+id/pt15"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="$ 6.8"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/border">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/pt16"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="210dp"-->
+<!--                            android:layout_marginTop="-25dp"-->
+<!--                            android:src="@drawable/pt16" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt16"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="Painting 16"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/pt16"-->
+<!--                            android:layout_alignRight="@+id/pt16"-->
+<!--                            android:layout_marginTop="-20dp"-->
+<!--                            android:layout_marginRight="5dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:text="$ 11.3"-->
+<!--                            android:textColor="#000000"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </RelativeLayout>-->
+<!--                    <Button-->
+<!--                        android:id="@+id/canvaspaintingsmainpage_btn"-->
+<!--                        android:layout_row="0"-->
+<!--                        android:layout_column="4"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="180dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginLeft="7dp"-->
+<!--                        android:text=">>"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="35dp"-->
+<!--                        android:textStyle="normal" />-->
+<!--                </GridLayout>-->
+<!--            </HorizontalScrollView>-->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
