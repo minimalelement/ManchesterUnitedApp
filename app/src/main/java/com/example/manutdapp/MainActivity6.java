@@ -58,33 +58,19 @@ public class MainActivity6 extends AppCompatActivity implements PopupMenu.OnMenu
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.long_press1:
+
+                // Code for Notificationss
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity6.this, "MyNotification");
                 builder.setContentTitle("Cart");
                 builder.setSmallIcon(R.drawable.ic_ball);
                 builder.setLargeIcon(BitmapFactory. decodeResource (getResources() , R.drawable.man_utd )) ;
                 builder.setContentText("Item added to Cart");
-                builder.setStyle(new NotificationCompat.BigTextStyle().bigText("Hurrah a new Bid has been Placed. Congrats and Good Luck! heheheheheheheheh"));
+                builder.setStyle(new NotificationCompat.BigTextStyle().bigText("Hurrah a new item ordered. Congrats and Good Luck! Nike Air Force 1332 - Man Utd Ltd Edition"));
                 builder.setSmallIcon(R.drawable.ic_bolt);
                 builder.setAutoCancel(true);
 
                 NotificationManagerCompat managerCompat = NotificationManagerCompat.from(MainActivity6.this);
                 managerCompat.notify(1, builder.build());
-
-
-
-//                NotificationCompat.Builder builder = new NotificationCompat.Builder(activity_snst1_page.this,"bid_place");
-//                builder.setContentTitle("Bid Placed!");
-//                builder.setContentText("Hurrah a new Bid has been Placed. Congrats and Good Luck!");
-//                builder.setSmallIcon(R.drawable.iconimage);
-//                builder.setLargeIcon(BitmapFactory. decodeResource (getResources() , R.drawable.logoimage )) ;
-//                builder.setAutoCancel(true);
-//                builder.setStyle(new NotificationCompat.BigTextStyle().bigText("Hurrah a new Bid has been Placed. Congrats and Good Luck! heheheheheheheheh"));
-//
-//                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(activity_snst1_page.this);
-//                managerCompat.notify(2, builder.build());
-
-
-
 
                 Toast.makeText(this, "Added to Cart", Toast.LENGTH_SHORT).show();
                 return true;

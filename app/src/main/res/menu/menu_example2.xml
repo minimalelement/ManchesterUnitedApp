@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+<!--    Code for Pop up menu  -->
+
     <item android:id="@+id/pop1"
         android:title="Americas"/>
     <item android:id="@+id/pop2"
